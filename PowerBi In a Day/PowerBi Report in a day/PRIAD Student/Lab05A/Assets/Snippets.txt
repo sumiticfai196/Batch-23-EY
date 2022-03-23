@@ -1,0 +1,28 @@
+>> Subtitle text box expression
+==================================================
+=Trim(Parameters!DateFiscalYear.Label)
+
+
+>> Variance % detail text box: Color expression
+==================================================
+=Iif(Fields!Variance_Pct.Value < 0, "Red", "Black")
+
+
+>> Variance % table footer text box: Expression
+==================================================
+=Sum(Fields!Sales.Value - Fields!Target.Value) / Sum(Fields!Target.Value)
+
+
+>> Country % detail text box: Expression
+==================================================
+=Fields!Sales.Value / Sum(Fields!Sales.Value, "Country")
+
+
+>> Overall % detail text box: Expression
+==================================================
+=Fields!Sales.Value / Sum(Fields!Sales.Value, "dsMain")
+
+
+>> Overall % Country header row text box: Expression
+==================================================
+=Sum(Fields!Sales.Value) / Sum(Fields!Sales.Value, "dsMain")

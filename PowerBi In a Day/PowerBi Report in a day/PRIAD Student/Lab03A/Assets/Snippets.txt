@@ -1,0 +1,8 @@
+>> dsMain dataset: Salesperson field expression
+==================================================
+=UCase(Fields!LastName.Value) & ", " & Fields!FirstName.Value
+
+
+>> dsMain dataset: GroupRegion field expression
+==================================================
+=Fields!SalesTerritoryGroup.Value & ": " & Fields!SalesTerritoryRegion.Value

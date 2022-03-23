@@ -1,0 +1,3 @@
+>> Footer text box expression
+==================================================
+="Generated at " & Format(Globals!ExecutionTime, "MM/dd/yyyy HH:mm:ss") & " UTC" & vbCrLf & "Page " & Globals!PageNumber & " of " & Globals!TotalPages

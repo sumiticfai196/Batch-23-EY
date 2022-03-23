@@ -1,0 +1,8 @@
+>> Report subtitle text box expression (1)
+==================================================
+=Parameters!SalesTerritoryGroup.Value & Iif(Parameters!EmployeeKey.Value = -1, "", " - " & Parameters!EmployeeKey.Label)
+
+
+>> Report subtitle text box expression (2)
+==================================================
+=Parameters!SalesTerritoryGroup.Value  & Iif(Parameters!EmployeeKey.Count = CountRows("dsSalesperson"), "", " - " & Join(Parameters!EmployeeKey.Label, ", "))
